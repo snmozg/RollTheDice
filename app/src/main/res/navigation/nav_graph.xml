@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:label="navigation"
+    app:startDestination="@id/homePageFragment">
+
+    <fragment
+        android:id="@+id/homePageFragment"
+        android:name="com.sozge.rollthedice.HomePageFragment"
+        android:label="Home Page"
+        tools:layout="@layout/fragment_home_page" >
+        <action
+            android:id="@+id/action_homePageFragment_to_singleFragment"
+            app:destination="@id/singleFragment" />
+        <action
+            android:id="@+id/action_homePageFragment_to_doubleFragment"
+            app:destination="@id/doubleFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/singleFragment"
+        android:name="com.sozge.rollthedice.SingleFragment"
+        android:label="Single Fragment"
+        tools:layout="@layout/fragment_single" />
+    <fragment
+        android:id="@+id/doubleFragment"
+        android:name="com.sozge.rollthedice.DoubleFragment"
+        android:label="fragment_double"
+        tools:layout="@layout/fragment_double" />
+
+    <!-- Set the start destination for the navigation graph -->
+</navigation>

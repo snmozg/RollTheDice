@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name" translatable="false">Roll The Dice</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+        <string name="dice_image">Dice Image</string>
+        <string name="dice_number">Dice Number</string>
+
+
+</resources>
